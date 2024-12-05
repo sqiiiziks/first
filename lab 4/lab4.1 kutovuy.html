@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Лабораторна робота: текст, що біжить">
+    <meta name="keywords" content="HTML, анімація, текст, що біжить">
+    <meta name="author" content="Кутовий">
+    <title>IvanennkoLab04-2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .row {
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 0;
+        }
+        .row1 {
+            background-color: #0077cc; /* Синій */
+        }
+        .row2 {
+            background-color: #28a745; /* Зелений */
+        }
+        .row3 {
+            background-color: #ffc107; /* Жовтий */
+        }
+        .row4 {
+            background-color: #dc3545; /* Червоний */
+        }
+        .row5 {
+            background-color: #6f42c1; /* Фіолетовий */
+        }
+    </style>
+</head>
+<body>
+    <!-- Текст коливається з боку в бік -->
+    <div class="row row1">
+        <marquee behavior="alternate" direction="left">Цей текст коливається з боку в бік</marquee>
+    </div>
+
+    <!-- Текст пробігає справа наліво та з'являється знову -->
+    <div class="row row2">
+        <marquee direction="right">Цей текст пробігає справа наліво та з'являється знову</marquee>
+    </div>
+
+    <!-- Текст пробігає зліва направо та зупиняється -->
+    <div class="row row3">
+        <marquee direction="left" loop="1">Цей текст пробігає зліва направо та зупиняється</marquee>
+    </div>
+
+    <!-- Перший рядок із режимом затримки -->
+    <div class="row row4">
+        <marquee scrollamount="3" scrolldelay="100">Цей текст рухається повільно із затримкою</marquee>
+    </div>
+
+    <!-- Другий рядок із режимом швидкої затримки -->
+    <div class="row row5">
+        <marquee scrollamount="10" scrolldelay="50">Цей текст рухається швидко із короткою затримкою</marquee>
+    </div>
+</body>
+</html>

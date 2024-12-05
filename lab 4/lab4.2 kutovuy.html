@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Лабораторна робота: вертикальний рух тексту та зображень">
+    <meta name="keywords" content="HTML, анімація, текст, зображення, рух">
+    <meta name="author" content="Кутовий">
+    <title>KutovuyLab04-3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .row {
+            height: 150px; /* Висота кожного рядка */
+            color: #fff;
+            font-size: 1.2em;
+            text-align: center;
+            overflow: hidden; /* Ховаємо зайве */
+        }
+        .row1 {
+            background-color: #0077cc; /* Синій */
+        }
+        .row2 {
+            background-color: #28a745; /* Зелений */
+        }
+        .row3 {
+            background-color: #ffc107; /* Жовтий */
+        }
+        .row4 {
+            background-color: #dc3545; /* Червоний */
+        }
+        .row5 {
+            background-color: #6f42c1; /* Фіолетовий */
+        }
+        marquee {
+            height: 100%; /* Повністю займає рядок */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Текст та рисунки коливаються -->
+    <div class="row row1">
+        <marquee behavior="alternate" direction="up">
+            <span>Цей текст і зображення коливаються</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShG2tzwevVeRJNRyKQFDANUzKXKfnefUEMGw&s" alt="Рисунок" width="50" height="50">
+        </marquee>
+    </div>
+
+    <!-- Рисунки пробігають знизу вгору -->
+    <div class="row row2">
+        <marquee direction="up">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShG2tzwevVeRJNRyKQFDANUzKXKfnefUEMGw&s" alt="Рисунок 1" width="50" height="50">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShG2tzwevVeRJNRyKQFDANUzKXKfnefUEMGw&s" alt="Рисунок 2" width="50" height="50">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShG2tzwevVeRJNRyKQFDANUzKXKfnefUEMGw&s" alt="Рисунок 3" width="50" height="50">
+        </marquee>
+    </div>
+
+    <!-- Рисунки пробігають згори вниз і зупиняються -->
+    <div class="row row3">
+        <marquee direction="down" loop="1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShG2tzwevVeRJNRyKQFDANUzKXKfnefUEMGw&s" alt="Рисунок 4" width="50" height="50">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShG2tzwevVeRJNRyKQFDANUzKXKfnefUEMGw&s" alt="Рисунок 5" width="50" height="50">
+        </marquee>
+    </div>
+
+    <!-- Перший текст із режимом затримки -->
+    <div class="row row4">
+        <marquee direction="up" scrollamount="2" scrolldelay="100">
+            Повільний текст із затримкою
+        </marquee>
+    </div>
+
+    <!-- Другий текст із іншим режимом затримки -->
+    <div class="row row5">
+        <marquee direction="down" scrollamount="10" scrolldelay="50">
+            Швидкий текст із короткою затримкою
+        </marquee>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сторінка про друзів">
+    <meta name="keywords" content="друзі, зображення, карта">
+    <meta name="author" content="Kutovuy">
+    <title>Мої друзі</title>
+    <style>
+        .tooltip {
+            position: absolute;
+            display: none;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        .friend {
+            position: relative;
+            margin: 20px;
+            display: inline-block;
+        }
+        .friend img {
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .friend:hover .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Мої друзі</h1>
+    <div class="friend">
+        <img src="https://www.depo.ua/uploads/418227/conversions/057da8e18f78732bbd9c9e3d04e94f74-wide-big.jpg" alt="Друг 1">
+        <div class="tooltip">Ім'я: Олексій, улюблене хобі: читання.</div>
+    </div>
+    <div class="friend">
+        <img src="https://i.pinimg.com/736x/b8/25/f8/b825f8aca31785c9165e18a279771100.jpg" alt="Друг 2">
+        <div class="tooltip">Ім'я: Марія, улюблене хобі: малювання.</div>
+    </div>
+    <div class="friend">
+        <img src="https://kor.ill.in.ua/m/610x385/2857370.jpg" alt="Друг 3">
+        <div class="tooltip">Ім'я: Дмитро, улюблене хобі: програмування.</div>
+    </div>
+</body>
+</html>

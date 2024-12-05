@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сторінка про мою Батьківщину">
+    <meta name="keywords" content="Батьківщина, фото, опис">
+    <meta name="author" content="Kutovuy">
+    <title>Моя Батьківщина</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Світло-блакитний фон */
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #0077cc;
+        }
+        .photo {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+        }
+        .photo img {
+            width: 300px;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .photo .tooltip {
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        .photo:hover .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Моя Батьківщина</h1>
+    <div class="photo">
+        <img src="https://www.secretland.info/wp-content/uploads/2020/09/poltava_arka.jpg" alt="Місто 1">
+        <div class="tooltip">Це моє рідне місто. Воно відоме своїми парками та архітектурою.</div>
+    </div>
+    <div class="photo">
+        <img src="https://lh5.googleusercontent.com/proxy/4fAW7YrJ9sbIhTGq5Gv62sMOM6KLihOKYhX_gMgWs-zdV8BCXFFDFnaGXoclMHRR4W4IeXd2kzfTmba4EyTMqCPdYeHTSdC1mpFjHsDUio9il2o" alt="Краєвид 1">
+        <div class="tooltip">Там знаходяться прекрасні краєвиди.</div>
+    </div>
+    <div class="photo">
+        <img src="https://kor.ill.in.ua/m/610x385/2028435.jpg" alt="Краєвид 2">
+        <div class="tooltip">Це місце моїх улюблених прогулянок.</div>
+    </div>
+</body>
+</html>

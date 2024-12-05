@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Форма з усіма елементами">
+    <meta name="keywords" content="форма, HTML, приклад">
+    <meta name="author" content="Kutovuy">
+    <title>Форма з усіма елементами</title>
+</head>
+<body>
+    <h1>Приклад форми з усіма елементами</h1>
+    <form action="submit-form.php" method="post">
+        <label for="text">Текстове поле:</label>
+        <input type="text" id="text" name="text"><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="textarea">Текстова область:</label><br>
+        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br><br>
+
+        <label for="select">Випадаючий список:</label>
+        <select id="select" name="select">
+            <option value="option1">Варіант 1</option>
+            <option value="option2">Варіант 2</option>
+        </select><br><br>
+
+        <label>Радіо-кнопки:</label><br>
+        <input type="radio" id="radio1" name="radio" value="radio1">
+        <label for="radio1">Варіант 1</label><br>
+        <input type="radio" id="radio2" name="radio" value="radio2">
+        <label for="radio2">Варіант 2</label><br><br>
+
+        <label>Чекбокси:</label><br>
+        <input type="checkbox" id="check1" name="check1">
+        <label for="check1">Опція 1</label><br>
+        <input type="checkbox" id="check2" name="check2">
+        <label for="check2">Опція 2</label><br><br>
+
+        <label for="file">Виберіть файл:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <input type="submit" value="Відправити">
+        <input type="reset" value="Скинути">
+    </form>
+</body>
+</html>
